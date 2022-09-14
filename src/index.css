@@ -24,6 +24,7 @@ body {
   background-color: rgb(20, 20, 20);
   padding: 3rem 5rem;
   height: 300px;
+  cursor: pointer;
 }
 
 .content-div {
