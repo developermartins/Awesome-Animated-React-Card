@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { MdComputer } from 'react-icons/md'
 
 import ProjectImg from './assets/youtube.png';
 
@@ -11,10 +13,10 @@ const App = () => {
   return (
     <div className='app'>
       <motion.div 
-        transition={{ layout: { duration: 0.7, type: "spring" } }} 
+        transition={{ layout: { duration: 0.7, type: "spring" } }}
         layout 
         className='card'
-        style={{   borderRadius: "15px", border: '1px solid #07b5e6' }}
+        style={{   borderRadius: "15px", border: '2px solid #07b5e6' }}
         onClick={ () => setOpen(!open) }
       > 
        { !open && <motion.img className='card-img' src={ ProjectImg } />}
@@ -34,6 +36,10 @@ const App = () => {
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, magni.
                 </p>
+                <div className="links">
+                  <a href=""><BsGithub />GitHub</a>
+                  <a href=""><MdComputer />Live app</a>
+                </div>
               </motion.div>
             )
           }
