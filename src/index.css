@@ -20,19 +20,34 @@ body {
 }
 
 .card {
+  position: relative;
   background-color: rgb(20, 20, 20);
   padding: 3rem 5rem;
+  height: 300px;
+}
+
+.content-div {
   width: 400px;
   height: 490px;
-  border-radius: 15px;
 }
 
 .card h2 {
   color: rgb(200, 200, 200);
+  margin-top: 150px;
 }
 
 .card p {
   padding-top: 1rem;
   line-height: 150%;
   color: rgb(200, 200, 200);
+}
+
+.card-img {
+  position: absolute;
+  height: 150px;
+  width: 325px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  top: 0;
+  left: 0;
 }
